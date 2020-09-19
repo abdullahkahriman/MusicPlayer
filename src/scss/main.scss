@@ -27,7 +27,7 @@ body {
     header {
         display: flex;
         justify-content: space-between;
-        .menu {
+        a {
             color: #455a64;
         }
         .text {
@@ -68,6 +68,7 @@ body {
             }
             progress[value]::-webkit-progress-value {
                 background: #00bfa5;
+                transition: width 0.5s;
                 border-radius: 5px;
             }
             .time {
@@ -84,10 +85,17 @@ body {
                 li {
                     a {
                         color: #94a0a7;
+                        transition: 300ms color;
+                        &:hover {
+                            color: #00bfa5;
+                        }
                     }
-                    &.icon-play {
+                    &.icon-play, &.icon-pause {
                         position: relative;
                         top: -15px;
+                    }
+                    &.icon-pause {
+                        display: none;
                     }
                 }
             }
@@ -101,6 +109,7 @@ body {
             justify-content: space-between;
             margin-bottom: 40px;
             position: relative;
+            transition: 400ms all;
             a {
                 flex: 1;
                 color: #455a64;

@@ -12,7 +12,7 @@
 
     <div class="container">
         <header>
-            <a href="#" class="menu">
+            <a href="javascript:;" class="menu">
                 <i class="fas fa-bars fa-2x"></i>
             </a>
 
@@ -21,15 +21,16 @@
                 <h4>Someone Lived This</h4>
                 <h5>- Hans Zimmer -</h5>
             </div>
-
-            <i class="far fa-plus-square fa-2x"></i>
+            <a href="javascript:;" class="create">
+                <i class="far fa-plus-square fa-2x"></i>
+            </a>
         </header>
         <div class="cover">
-            <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png" alt="">
+            <img src="" alt="">
         </div>
         <div class="player">
             <div class="progress-bar">
-                <progress value="45" max="100"></progress>
+                <progress value="0" min="0" max="100"></progress>
                 <div class="time">
                     <span class="time-start">3:47</span>
                     <span class="time-final">5:35</span>
@@ -37,12 +38,12 @@
             </div>
             <div class="player-buttons">
                 <ul>
-                    <li>
+                    <li class="icon-reset">
                         <a href="#">
                             <i class="fas fa-undo fa-2x"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="icon-prev">
                         <a href="#">
                             <i class="fas fa-step-backward fa-2x"></i>
                         </a>
@@ -52,7 +53,12 @@
                             <i class="far fa-play-circle fa-4x"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="icon-pause">
+                        <a href="#">
+                            <i class="far fa-pause-circle fa-4x"></i>
+                        </a>
+                    </li>
+                    <li class="icon-next">
                         <a href="#">
                             <i class="fas fa-step-forward fa-2x"></i>
                         </a>
@@ -66,21 +72,30 @@
             </div>
         </div>
         <div class="list">
-            <div class="list-item">
-                <a href="#">Sapper's Tree</a>
-                <span>3:37</span>
-            </div>
+            <audio style="height: auto; display: none" autoplay>
+                <source src="" type="audio/mpeg">
+            </audio>
             <div class="list-item active">
-                <a href="#">Someone Lived This</a>
-                <span>5:35</span>
+                <a href="#" data-cover="https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png"
+                    data-music="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">Sapper's Tree</a>
+                <span>6:12</span>
             </div>
             <div class="list-item">
-                <a href="#">Summer Wind</a>
-                <span>2:54</span>
+                <a href="#"
+                    data-cover="https://i.sozcu.com.tr/wp-content/uploads/2020/04/19/iecrop/arog_16_9_1587299260.jpg"
+                    data-music="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">Someone Lived This</a>
+                <span>7:05</span>
             </div>
             <div class="list-item">
-                <a href="#">Orphanage</a>
-                <span>1:13</span>
+                <a href="#"
+                    data-cover="https://foto.haberler.com/haber/2020/03/19/kolonya-cumhuriyeti-filmi-konusu-nedir-kolonya-13031414_9300_amp.jpg"
+                    data-music="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">Summer Wind</a>
+                <span>5:44</span>
+            </div>
+            <div class="list-item">
+                <a href="#" data-cover="https://cdn7.antedote.com/wp-content/uploads/2014/12/interstellar-poster.jpg"
+                    data-music="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3">Orphanage</a>
+                <span>8:47</span>
             </div>
         </div>
     </div>
