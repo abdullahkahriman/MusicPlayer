@@ -19,6 +19,11 @@ body {
     margin: 100px auto;
     padding: 40px 24px;
     box-sizing: border-box;
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        margin: 0;
+    }
+
     header {
         display: flex;
         justify-content: space-between;
