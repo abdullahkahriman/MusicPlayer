@@ -8,6 +8,7 @@ Clone the repo to a suitable location.
 ```
 git clone https://github.com/abdullahkahriman/MusicPlayer.git .
 ```
+Then install the packages.
 ```
 npm install -y
 ```
