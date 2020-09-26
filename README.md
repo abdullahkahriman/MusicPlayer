@@ -4,6 +4,10 @@
 <img src="https://raw.githubusercontent.com/abdullahkahriman/MusicPlayer/master/dist/img/ss.png" />
 
 ### Install
+Clone the repo to a suitable location.
+```
+git clone https://github.com/abdullahkahriman/MusicPlayer.git .
+```
 ```
 npm install -y
 ```
