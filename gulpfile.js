@@ -62,7 +62,7 @@ gulp.task("img", () => {
 });
 
 gulp.task("delete", () =>
-  del(["dist/css", "dist/js", "dist/img", "dist/**/*.html"])
+  del(["dist/css", "dist/js", "dist/**/*.html"])
 );
 
 gulp.task("watch", () => {
